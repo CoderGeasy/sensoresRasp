@@ -18,11 +18,6 @@ class Menu:
         self.repeat = 2
         self.enter_pressed = False
         self.collecion = "Sensores"
-
-    def contador(self, tiempo):
-        for i in range(tiempo, -1, -1):
-            time.sleep(1)
-        return True
     
     def main(self):
         opcion = ""

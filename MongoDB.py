@@ -8,7 +8,7 @@ class MongoDB:
     def createConnection(self):
         try:
             self.client = pymongo.MongoClient("mongodb+srv://admin:televicion05@cluster0.uujrdgs.mongodb.net/?retryWrites=true&w=majority")
-            self.db = self.client["Raspberry"]
+            self.db = self.client["Sensores-Raspberry"]
             print("Conexión exitosa.")
             return True
         

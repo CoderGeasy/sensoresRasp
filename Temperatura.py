@@ -1,10 +1,9 @@
 import sys
 import adafruit_dht
-from pulseio import PulseIn
 
 class Temperatura:
     def __init__(self, pin):
-        self.sensor = adafruit_dht.DHT11(use_pulseio=False)
+        self.sensor = adafruit_dht.DHT11
         self.pin = pin
 
     def medirTemperatura(self):

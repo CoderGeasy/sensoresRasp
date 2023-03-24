@@ -8,7 +8,9 @@ class Temperatura:
 
     def medirTemperatura(self):
         dht_sensor = self.sensor(self.pin)
-        hum, temp = dht_sensor.read()
+        dht_sensor.measure()
+        hum = dht_sensor.humidity
+        temp = dht_sensor.temperature
         return  hum, temp
         
 

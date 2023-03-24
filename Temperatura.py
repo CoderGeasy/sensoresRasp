@@ -3,11 +3,11 @@ import adafruit_dht
 
 class Temperatura:
     def __init__(self, pin):
-        self.sensor = Adafruit_DHT.DHT11
+        self.sensor = adafruit_dht.DHT11
         self.pin = pin
 
     def medirTemperatura(self):
-        hum, temp = Adafruit_DHT.read(self.sensor, self.pin)
+        hum, temp = adafruit_dht.read(self.sensor, self.pin)
         return  hum, temp
         
 

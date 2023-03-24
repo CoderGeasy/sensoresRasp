@@ -23,10 +23,10 @@ class Sensor:
             sensorUltrasonico = Ultrasonico(self.pines[0], self.pines[1])
             distancia = sensorUltrasonico.medirDistancia()
             valores.append(distancia)
-            self.tipoDato=["centimetros"]
+            self.tipoDato=["distancia en cm"]
 
         elif self.key == "tmp":
-            self.tipoDato = ["grados °C","porcentaje %"]
+            self.tipoDato = ["temperatura en C°","humedad en %"]
             sensorDht = Temperatura(self.pines[0])
             hum, temp = sensorDht.medirTemperatura()
             if hum is not None and temp is not None:

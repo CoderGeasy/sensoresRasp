@@ -1,4 +1,5 @@
-import Adafruit_DHT
+import sys
+import adafruit_dht
 
 class Temperatura:
     def __init__(self, pin):

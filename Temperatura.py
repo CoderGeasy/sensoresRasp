@@ -7,7 +7,7 @@ class Temperatura:
         self.pin = pin
 
     def medirTemperatura(self):
-        hum, temp = adafruit_dht.read(self.sensor, self.pin)
+        hum, temp = self.sensor.read(self.pin)
         return  hum, temp
         
 
